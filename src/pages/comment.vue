@@ -11,8 +11,12 @@
             <el-table-column prop="comment" label="评论内容" />
             <el-table-column label="操作" width="350">
                 <template #default="scope">
-                    <el-button type="danger" @click="deleteComment(scope.row.id)">删除
-                    </el-button>
+                    <el-popconfirm title="确定要删除吗?" confirm-button-text="是的" cancel-button-text="让我想想"
+                        @confirm="deleteComment(scope.row.id)">
+                        <template #reference>
+                            <el-button type="danger">删除</el-button>
+                        </template>
+                    </el-popconfirm>
                 </template>
             </el-table-column>
         </el-table>
