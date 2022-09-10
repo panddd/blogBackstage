@@ -140,7 +140,6 @@ export default {
                     value: "其他"
                 }
             ],
-
         }
     },
     created() {

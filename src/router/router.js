@@ -30,6 +30,11 @@ const router = createRouter({
                 path: 'comment',
                 name: 'comment',
                 component: () => import('../pages/comment.vue')
+            },
+            {
+                path: 'information',
+                name: 'information',
+                component: () => import('../pages/information.vue')
             }
             ]
         },

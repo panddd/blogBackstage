@@ -9,11 +9,11 @@
                     </el-icon>主页
                 </template>
             </el-menu-item>
-            <el-menu-item index="2">
+            <el-menu-item index="/manage/information">
                 <template #title>
                     <el-icon>
-                        <Menu />
-                    </el-icon>菜单
+                        <UserFilled />
+                    </el-icon>信息
                 </template>
             </el-menu-item>
             <el-menu-item index="/manage/article">

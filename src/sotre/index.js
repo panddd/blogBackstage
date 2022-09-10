@@ -3,10 +3,12 @@ import { createStore } from 'vuex'
 let user = JSON.parse(localStorage.getItem('user'))
 
 export default createStore({
-    state: {
-        isDelete: user ? user.isDelete : "",
-        isEdit: user ? user.isEdit : "",
-        isAdd: user ? user.isAdd : "",
+    state: () => {
+        return {
+            isDelete: user ? user.isDelete : "",
+            isEdit: user ? user.isEdit : "",
+            isAdd: user ? user.isAdd : "",
+        }
     },
     mutations: {
         getUty(state) {
